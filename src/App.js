@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <h1>salom</h1>
+      <h1>salom ohsha</h1>
       <button onClick={onClose}>Закрыть</button>
     </>
   );
