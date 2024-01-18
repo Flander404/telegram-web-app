@@ -1,22 +1,16 @@
-import { useEffect } from "react";
 import "./style/App.css";
-
-const tg = window.Telegram.WebApp;
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Captcha from "./pages/Captcha";
 
 function App() {
-  useEffect(()=>(
-    tg.ready()
-  ), [])
-
-  const onClose = () => {
-    tg.close()
-  }
-
   return (
-    <>
-      <h1>salom ohsha</h1>
-      <button onClick={onClose}>Закрыть</button>
-    </>
+    <div className="main">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/captcha" element={<Captcha />} />
+      </Routes>
+    </div>
   );
 }
 
