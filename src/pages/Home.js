@@ -12,7 +12,7 @@ const Home = () => {
         <div className="home_btn">
           <Link to={'/captcha'}>
           
-            Пройти каптчу d
+            Пройти каптчу
           
           </Link>
         </div>
