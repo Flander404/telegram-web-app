@@ -14,6 +14,7 @@ const Captcha = () => {
       <span>
         {tg.initDataUnsafe?.user.last_name}
       </span>
+      <img src={tg.initDataUnsafe?.user.photo_url} alt="" />
     </div>
   );
 };
