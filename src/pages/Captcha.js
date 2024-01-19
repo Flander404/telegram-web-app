@@ -17,6 +17,7 @@ const Captcha = () => {
         console.error("Error fetching user data", error);
       }
     };
+    console.log(tg.initDataUnsafe?.user.photo_url);
 
     // Call the fetchUserData function
     fetchUserData();
