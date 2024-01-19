@@ -18,8 +18,7 @@ const Captcha = () => {
   return (
     <div className="captcha">
       <h4>Потвердите пожалуйста что вы не робот</h4>
-      <img src={getUserProfilePicture()} alt="Аватар пользователя" />
-      <button>Click test</button>
+      <button>Тест пока не работает</button>
       <span>{user}</span>
     </div>
   );
