@@ -9,7 +9,10 @@ const Captcha = () => {
       <h1>Потвердите пожалуйста что вы не робот</h1>
       <button>Click test</button>
       <span>
-        {tg.initDataUnsafe?.user}
+        {tg.initDataUnsafe?.user.first_name}
+      </span>
+      <span>
+        {tg.initDataUnsafe?.user.last_name}
       </span>
     </div>
   );
