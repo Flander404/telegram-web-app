@@ -1,11 +1,16 @@
 import React from "react";
 import "friendly-challenge/widget";
 
+const tg = window.Telegram.WebApp
+
 const Captcha = () => {
   return (
     <div className="captcha">
       <h1>Потвердите пожалуйста что вы не робот</h1>
-      <div class="frc-captcha" data-sitekey="FCMSO2EKHKGB35CH"></div>
+      <button>Click test</button>
+      <span>
+        {tg.initDataUnsafe?.user?.username}
+      </span>
     </div>
   );
 };
